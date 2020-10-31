@@ -1,6 +1,3 @@
-@font-face {
-  font-family:'shrikhand';
-  src: url("font/Shrikhand/Shrikhand-Regular.ttf"); }
   
 * 
 {
@@ -26,11 +23,10 @@ a:hover
 #conteneur1 
 {
   width: 100%;
+  text-align: center;
 }
 #conteneur1 img
 {
-  margin-top: 25px;
-  margin-left: 43%;
   height: 50px;
 }
 .info
@@ -65,6 +61,10 @@ article
   padding-top: 40px;
   padding-bottom: 120px;
 }
+#bouton
+{
+  text-align: center;
+}
 .explore
 {
     position: absolute;
@@ -73,7 +73,7 @@ article
     display: flex;
     width: 230px;
     margin-top: 30px;
-    margin-left:45%;
+    
     padding: 10px 20px;
     border-radius: 20px 20px 20px 20px;
     box-shadow:6px 6px 6px grey;
@@ -247,7 +247,7 @@ footer
 footer h4 
 {
   font-size: 14px;
-  font-family:'shrikhand';
+  font-family: 'Shrikhand', cursive;
 }
 footer p 
 {
@@ -261,10 +261,6 @@ footer p
 {
    flex-wrap: wrap;
    width: 100%;  
-}
-#conteneur1 img
-{
-  margin-left: 35%;
 }
 #menu
 {
@@ -295,6 +291,8 @@ h4
 @media screen and (max-width: 950px) {
 #conteneur1 img
 {
+  margin-top: 10px;
+  margin-bottom: -10px;
   height: 25px;
 }
 h2 {
