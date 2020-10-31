@@ -1,12 +1,13 @@
 @font-face {
-  font-family:'raleway';
-  src: url("font/raleway/Raleway-Regular.ttf"); }
+  font-family:'shrikhand';
+  src: url("font/Shrikhand/Shrikhand-Regular.ttf"); }
+  
 * 
 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: raleway; 
+  font-family: 'Roboto', sans-serif; 
 }
 a 
 {
@@ -29,8 +30,8 @@ a:hover
 #conteneur1 img
 {
   margin-top: 25px;
-  margin-left: 46%;
-  height: 25px;
+  margin-left: 43%;
+  height: 50px;
 }
 .info
 {
@@ -41,7 +42,7 @@ a:hover
   margin-bottom: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: grey;
+  background-color: #eaeaea;
 }
 .info .fas
 {
@@ -49,11 +50,11 @@ a:hover
   color: black;
 }
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   }
 h6 {
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
   padding-top: 10px; 
 }
@@ -62,17 +63,17 @@ article
   margin-top:-30px;
   background: #F2F2F2;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
 }
 .explore
 {
+    position: absolute;
     background-color: #9356DC;
     color: white;
     display: flex;
     width: 230px;
-    margin-left: 42%;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left:45%;
     padding: 10px 20px;
     border-radius: 20px 20px 20px 20px;
     box-shadow:6px 6px 6px grey;
@@ -98,6 +99,10 @@ article
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 50px; 
+}
+.filtres2 p
+{
+  font-size: 16px;
 }
 .partage .fas 
 {
@@ -162,6 +167,19 @@ article
   display: flex;
   flex-wrap: nowrap; 
 }
+.new
+{
+  position:absolute;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom:5px;
+  margin-top: -240px;
+  margin-left: 15%;
+  color:green;
+  font-weight: bold;
+  background:#99E2D0;
+}
 .elGros 
 {
   margin: 2%;
@@ -200,7 +218,7 @@ article
 footer 
 {
   width: 100%;
-  background: grey;
+  background:#353535;
   color:white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -219,8 +237,8 @@ footer
 {
   display:flex;
   justify-content: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 } 
 .fas 
 {
@@ -229,6 +247,7 @@ footer
 footer h4 
 {
   font-size: 14px;
+  font-family:'shrikhand';
 }
 footer p 
 {
@@ -247,13 +266,13 @@ footer p
 {
   margin-left: 35%;
 }
-.explore
-{
-    margin-left: 27%;  
-}
 #menu
 {
   width: 90%; 
+}
+.new
+{
+  margin-left: 10%;
 }
 #conteneur3 h2
 {
@@ -274,7 +293,20 @@ h4
   margin-top: 5px;
 } 
 @media screen and (max-width: 950px) {
-
+#conteneur1 img
+{
+  height: 25px;
+}
+h2 {
+  font-size: 20px;
+  }
+h6 {
+  font-size: 14px;
+}
+.explore
+{
+  margin-left: 25%;
+}
 .filtres2 
 {
    flex-wrap: wrap;
@@ -285,7 +317,7 @@ h4
   display: table-column;
   margin: 2%;
 }
-#conteneur2 p
+#conteneur2 h2
 {
   text-align: left;
 }
@@ -297,6 +329,11 @@ h4
 .dFlex
 {
   flex-direction: column;
+}
+.new
+{
+  margin-top: -220px;
+  margin-left: 57%;
 }
 .elGros
 {
