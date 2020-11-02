@@ -19,6 +19,15 @@ a:hover
 {
   color:#FF79DA;
 }
+header
+{
+  display: flex;
+}
+#fleche
+{
+  margin-left: 20px;
+  margin-top: 15px;
+}
 #conteneur1 
 {
   width: 100%;
@@ -28,6 +37,7 @@ a:hover
 #conteneur1 img
 {
   height: 50px;
+  margin-left: -40px;
 }
 #image img
 {
