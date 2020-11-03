@@ -16,12 +16,16 @@ a {
 	}
 }
 .position {
-	a {
-		color: white;
-	}
 	display: flex;
 	justify-content: center;
 	padding: 2%;
+	a{ 
+		color: white;
+	}
+	a:hover
+	{
+		color: $color-secondary;
+	}
 }
 #conteneur1 {
 	width: 100%;
@@ -49,9 +53,16 @@ h2 {
 	text-align: center;
 }
 h6 {
-	font-size: 20px;
+	font-size: 18px;
+	font-style: italic;
 	text-align: center;
 	padding-top: 10px;
+}
+h5{
+	font-size: 16px;
+	font-style: italic;
+	margin-top: -5px;
+	margin-left: 10px;
 }
 article {
 	margin-top: -30px;
@@ -64,7 +75,7 @@ article {
 	margin-top: 30px;
 }
 .explore {
-	background-color:$color-primary;
+	background:linear-gradient(to right, $color-secondary, $color-primary);
 	color: white;
 	width: 230px;
 	margin-top: 30px;
@@ -72,6 +83,10 @@ article {
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 6px 6px 6px grey;
 	text-decoration: none;
+	 
+	&:hover{
+		color:white;
+	}
 }
 #conteneur2 {
 	padding-top: 15px;
@@ -115,6 +130,13 @@ article {
 		padding-left: 95px;
 		margin-top: 5px;
 		width: 425px;
+		&:hover {
+			background-color: lighten($color: #9356DC, $amount: 30);
+			border: 3px solid lighten($color: #9356DC, $amount: 30);
+			a{
+				color:black;
+			} 
+		}
 	}
 }
 .etape {
@@ -206,9 +228,12 @@ footer {
 		font-size: 14px;
 	}
 }
-.plex {
+.pflex {
 	p {
 		color: white;
+	}
+	&:hover {
+		color: $color-secondary;
 	}
 }
 .pflex {

@@ -17,6 +17,8 @@ a {
   padding: 2%; }
   .position a {
     color: white; }
+  .position a:hover {
+    color: #FF79DA; }
 
 #conteneur1 {
   width: 100%;
@@ -42,9 +44,16 @@ h2 {
   text-align: center; }
 
 h6 {
-  font-size: 20px;
+  font-size: 18px;
+  font-style: italic;
   text-align: center;
   padding-top: 10px; }
+
+h5 {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: -5px;
+  margin-left: 10px; }
 
 article {
   margin-top: -30px;
@@ -57,7 +66,7 @@ article {
   margin-top: 30px; }
 
 .explore {
-  background-color: #9356DC;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
   color: white;
   width: 230px;
   margin-top: 30px;
@@ -65,6 +74,8 @@ article {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 6px 6px 6px grey;
   text-decoration: none; }
+  .explore:hover {
+    color: white; }
 
 #conteneur2 {
   padding-top: 15px;
@@ -104,6 +115,11 @@ article {
   padding-left: 95px;
   margin-top: 5px;
   width: 425px; }
+  .partage p:hover {
+    background-color: #e4d5f6;
+    border: 3px solid #e4d5f6; }
+    .partage p:hover a {
+      color: black; }
 
 .etape {
   position: absolute;
@@ -189,8 +205,10 @@ footer {
   footer p {
     font-size: 14px; }
 
-.plex p {
+.pflex p {
   color: white; }
+.pflex:hover {
+  color: #FF79DA; }
 
 .pflex {
   display: flex;
