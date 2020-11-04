@@ -73,6 +73,11 @@ article {
 #bouton {
 	text-align: center;
 	margin-top: 30px;
+	transform: scal(1);
+	transition: transform 400ms; 
+	&:hover{
+		transform: scale(1.15);
+	}
 }
 .explore {
 	background:linear-gradient(to right, $color-secondary, $color-primary);
@@ -83,7 +88,6 @@ article {
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 6px 6px 6px grey;
 	text-decoration: none;
-	 
 	&:hover{
 		color:white;
 	}
@@ -133,6 +137,7 @@ article {
 		&:hover {
 			background-color: lighten($color: #9356DC, $amount: 30);
 			border: 3px solid lighten($color: #9356DC, $amount: 30);
+			box-shadow: darken($color: grey, $amount: 30);
 			a{
 				color:black;
 			} 

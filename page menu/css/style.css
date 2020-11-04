@@ -63,7 +63,11 @@ article {
 
 #bouton {
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  transform: scal(1);
+  transition: transform 400ms; }
+  #bouton:hover {
+    transform: scale(1.15); }
 
 .explore {
   background: linear-gradient(to right, #FF79DA, #9356DC);
@@ -117,7 +121,8 @@ article {
   width: 425px; }
   .partage p:hover {
     background-color: #e4d5f6;
-    border: 3px solid #e4d5f6; }
+    border: 3px solid #e4d5f6;
+    box-shadow: #343434; }
     .partage p:hover a {
       color: black; }
 
