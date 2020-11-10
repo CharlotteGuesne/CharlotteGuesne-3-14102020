@@ -15,6 +15,19 @@ a {
 		color: $color-secondary;
 	}
 }
+#loading {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+	border: 3px solid #137b85;
+	border-radius: 50%;
+	border-top-color:$color-tertiary;
+	animation: rotation 1s ease-in-out infinite;
+  }
+  @keyframes rotation {
+	to { transform: rotate(360deg); }
+  }
 .position {
 	display: flex;
 	justify-content: center;
@@ -32,6 +45,7 @@ a {
 	text-align: center;
 	img {
 		height: 50px;
+		width: 300px;
 	}
 }
 .info {
@@ -65,11 +79,12 @@ h5{
 article {
 	margin-top: -30px;
 	background: #F2F2F2;
-	padding: 40px 0 60px 0;
+	padding: 40px 0 30px 0;
+	text-align: center;
 }
 #bouton {
 	text-align: center;
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
 	transform: scal(1);
 	transition: transform 400ms; 
 	&:hover{
@@ -87,10 +102,12 @@ article {
 	text-decoration: none;
 	&:hover{
 		color:white;
+		background:lighten($color-secondary, 10%);
+		box-shadow: darken( black, 20%);
 	}
 }
 #conteneur2 {
-	padding-top: 15px;
+	padding-top: -10px;
 	width: 100%;
 	p {
 		text-align: center;
@@ -156,7 +173,7 @@ article {
 	}
 }
 #menu {
-	margin: 0 25px 0 25px;
+	margin: 10px 25px 10px 25px;
 	border-radius: 10px;
 	width: 100%;
 }
@@ -179,6 +196,60 @@ article {
 	border-radius: 10px;
 	background: white;
 	height: 300px;
+	animation: cartemenu 3s;
+		}
+	@keyframes cartemenu{
+		0%{
+			transform:translateX(100px);
+			opacity:0;
+		}
+		100%{
+			transform:translateX(0px);
+			opacity:1;
+		}
+	}
+.menu1{
+	animation: cartemenu 3s;
+	animation-delay: 500ms;
+		}
+	@keyframes cartemenu{
+		0%{
+			transform:translateX(100px);
+			opacity:0;
+		}
+		100%{
+			transform:translateX(0px);
+			opacity:1;
+		}
+}
+.menu2{
+	animation: cartemenu 3s;
+	animation-delay: 1000ms;
+		}
+	@keyframes cartemenu{
+		0%{
+			transform:translateX(100px);
+			opacity:0;
+		}
+		100%{
+			transform:translateX(0px);
+			opacity:1;
+		}
+}
+.menu3{
+	animation: cartemenu 3s;
+	animation-delay: 1500ms;
+		}
+	@keyframes cartemenu{
+		0%{
+			transform:translateX(100px);
+			opacity:0;
+		}
+		100%{
+			transform:translateX(0px);
+			opacity:1;
+		}
+}
 	img {
 		width: 100%;
 		height: 75%;
@@ -190,7 +261,7 @@ article {
 		line-height: 25px;
 		padding: 10px 0 10px 10px;
 	}
-}
+	
 .coeur {
 	margin-top: -50px;
 	width: 5%;
@@ -261,7 +332,8 @@ footer {
 		
     #conteneur1 img { 
         margin: 10px 0 -10px 0;
-        height: 25px;}
+		height: 25px;
+		width: 150px;}
     
     h2 {
         font-size: 20px;
