@@ -154,32 +154,31 @@ h5{
 		left: 10px;
 		}
 .barre {
-	transition: all 0.2s linear 0s;
 	background-color: aquamarine;
 	border-radius: 0px 20px 20px 0px;
-	width: 30%;
 	height: 0;
-	right:0;
-	position: relative;
-	right:0;
-	bottom: 0;
+	position: absolute;
+	left:78%;
+	top:4px;
 		  }
 		  .barre .fas{
 			opacity:0;
-			margin-left: 40px;
 			color: white;
 		  }
-		  .prix:hover .barre {
+		  .partage:hover .barre {
 			height: 60px;
-			width: 40px;
-			margin-top: -39px;
-			margin-left: -10px;
-			padding-right: 70px;
+			width: 20%;
+			margin: -7px 0 0 19px;
+			position: absolute;
+			padding-right: 80px;
 			 }
-		  .prix:hover .fas {
+		  .partage:hover .prix {
+			margin-left:70%;
+			}
+		  .partage:hover .fas {
 			opacity:1;
 			margin: 20px 0 0 0;
-			padding:0 0 0 25px;
+			padding:0 0 0 45px;
 			animation-name: turn;
 			animation-duration: 1s;
 		  }
@@ -197,7 +196,7 @@ h5{
 
 .prix {
 	position: relative;
-	margin: -40px 0 0 76%;
+	margin: -30px 0 0 85%;
 }
 #conteneur3 {
 	background: #F2F2F2;
@@ -300,7 +299,7 @@ footer {
 		width: 100%;
 	}
 	.partage {
-		margin: 15px 0 40px 0;
+		margin: 15px 0 10px 0;
 		width: 95%;
 		p {
 			padding: 0 140px 0 5px;
@@ -308,19 +307,9 @@ footer {
 			line-height: 20px;
 		}
 	}
-	.prix:hover .barre {
-			height: 60px;
-			width: 40px;
-			margin-top: -49px;
-			margin-left:-3px;
-			padding-right: 50px;
-	}
-	.prix:hover .fas {
-		padding:0 0 0 15px;
-	  }
 	.prix {
 		position: relative;
-		margin: -70px 0 0 85%;
+		margin: -30px 0 0 85%;
 	}
 	#bouton {
 		margin-top: 110px;
