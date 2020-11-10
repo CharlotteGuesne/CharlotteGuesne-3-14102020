@@ -15,6 +15,27 @@ a {
 		color: $color-secondary;
 	}
 }
+#logo
+  {
+	display: none;
+  }
+input::placeholder
+  {
+    font-weight: bold;
+    padding: 5px;
+    font-weight: 600;
+	color: black;
+	background: #eaeaea;
+	text-align: center;
+  }
+input:focus::placeholder
+  {
+	opacity: 10%;
+  }
+input
+  {
+    border: 1px solid #eaeaea ;
+  }
 #loading {
 	display: inline-block;
 	width: 50px;
@@ -56,7 +77,7 @@ a {
 	padding: 10px 0px 10px 0px;
 	background: #eaeaea;
 	.fas {
-		margin-left: -30px;
+		margin: -2px 0 0 -30px;
 		color: black;
 	}
 }
@@ -105,6 +126,13 @@ article {
 		background:lighten($color-secondary, 10%);
 		box-shadow: darken( black, 20%);
 	}
+}
+.coeur .fas{
+	color:#eaeaea;
+	margin-top: 15px;
+}
+.coeur:hover .fas{
+	color:$color-secondary;
 }
 #conteneur2 {
 	padding-top: -10px;
@@ -273,33 +301,31 @@ article {
 footer {
 	width: 100%;
 	background: #353535;
-	color: white;
+	color:white;
 	padding: 20px 0 20px 0;
-
 	h4 {
 		font-size: 14px;
 		font-family: 'Shrikhand', cursive;
+		margin-top: 10px;
 	}
 	p {
 		font-size: 14px;
 	}
 }
 .pflex {
-	p {
-		color: white;
-	}
-	&:hover {
-		color: $color-secondary;
-	}
-}
-.pflex {
+	color:white;
 	display: flex;
 	justify-content: center;
 	margin: 0 20px 0 20px;
+		&:hover {
+			color: $color-secondary;
+		}
 }
 .fas {
-	margin-right: 10px;
+	margin: 10px 10px 0 0;
+
 }
+
 @media screen and (max-width: 1250px) {
 	.filtres2 {
 		flex-wrap: wrap;
@@ -326,7 +352,7 @@ footer {
 		padding-bottom: 10px;
     }
     .fas {
-		margin-top: 5px;
+		margin-top: -5px;
     }
     @media screen and (max-width:950px) {
 		
@@ -366,6 +392,11 @@ footer {
                 max-height: 200px;
                 }
     }
-
+	.pflex .fas{
+		margin:10px 0 0 10px;
+	}
+	h4{
+		margin-left:10px;
+	}
  }
 }

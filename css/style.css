@@ -11,6 +11,23 @@ a {
   a:hover {
     color: #FF79DA; }
 
+#logo {
+  display: none; }
+
+input::placeholder {
+  font-weight: bold;
+  padding: 5px;
+  font-weight: 600;
+  color: black;
+  background: #eaeaea;
+  text-align: center; }
+
+input:focus::placeholder {
+  opacity: 10%; }
+
+input {
+  border: 1px solid #eaeaea; }
+
 #loading {
   display: inline-block;
   width: 50px;
@@ -48,7 +65,7 @@ a {
   padding: 10px 0px 10px 0px;
   background: #eaeaea; }
   .info .fas {
-    margin-left: -30px;
+    margin: -2px 0 0 -30px;
     color: black; }
 
 h2 {
@@ -93,6 +110,13 @@ article {
     color: white;
     background: #fface8;
     box-shadow: black; }
+
+.coeur .fas {
+  color: #eaeaea;
+  margin-top: 15px; }
+
+.coeur:hover .fas {
+  color: #FF79DA; }
 
 #conteneur2 {
   padding-top: -10px;
@@ -243,22 +267,21 @@ footer {
   padding: 20px 0 20px 0; }
   footer h4 {
     font-size: 14px;
-    font-family: 'Shrikhand', cursive; }
+    font-family: 'Shrikhand', cursive;
+    margin-top: 10px; }
   footer p {
     font-size: 14px; }
 
-.pflex p {
-  color: white; }
-.pflex:hover {
-  color: #FF79DA; }
-
 .pflex {
+  color: white;
   display: flex;
   justify-content: center;
   margin: 0 20px 0 20px; }
+  .pflex:hover {
+    color: #FF79DA; }
 
 .fas {
-  margin-right: 10px; }
+  margin: 10px 10px 0 0; }
 
 @media screen and (max-width: 1250px) {
   .filtres2 {
@@ -284,7 +307,7 @@ footer {
     padding-bottom: 10px; }
 
   .fas {
-    margin-top: 5px; } }
+    margin-top: -5px; } }
 @media screen and (max-width: 1250px) and (max-width: 950px) {
   #conteneur1 img {
     margin: 10px 0 -10px 0;
@@ -316,6 +339,12 @@ footer {
     margin-bottom: 10px;
     box-shadow: 6px 6px 6px #F2F2F2; }
     .restaurant img {
-      max-height: 200px; } }
+      max-height: 200px; }
+
+  .pflex .fas {
+    margin: 10px 0 0 10px; }
+
+  h4 {
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

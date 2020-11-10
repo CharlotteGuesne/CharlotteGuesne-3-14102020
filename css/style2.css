@@ -58,9 +58,13 @@ header {
   #conteneur2 p {
     text-align: left; }
 
-.far {
+.coeur .fas {
   position: absolute;
-  margin: -25px 0 0 45%; }
+  margin: -25px 0 0 65%;
+  color: black; }
+
+.coeur .fas:hover {
+  color: #FF79DA; }
 
 h2 {
   margin: 90px 0 0 15%;
