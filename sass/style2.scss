@@ -159,41 +159,33 @@ h5{
 		left: 10px;
 		}
 .barre {
+	transition: all 0.3s linear 0s;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
 	background-color: aquamarine;
 	border-radius: 0px 20px 20px 0px;
-	height: 0;
-	position: absolute;
-	left:78%;
-	top:4px;
 		  }
 		  .barre .fas{
 			opacity:0;
 			color: white;
 		  }
-		  .partage:hover .barre {
-			height: 60px;
+		  .partage:active .barre {
 			width: 20%;
-			margin: -7px 0 0 19px;
-			position: absolute;
-			padding-right: 80px;
 			 }
-		  .partage:hover .prix {
+		  .partage:active .prix {
 			margin-left:70%;
 			}
-		  .partage:hover .fas {
+		  .partage:active .fas {
 			opacity:1;
 			margin: 20px 0 0 0;
-			padding:0 0 0 45px;
+			padding:0 0 0 35px;
 			animation-name: turn;
 			animation-duration: 1s;
 		  }
 		  @keyframes turn{
-			0%{
-			  transform:rotate(145deg);
-			}
-			50%{
-			  transform:rotate(0deg);
-			}
 			100%{
 			  transform:rotate(360deg);
 			}
