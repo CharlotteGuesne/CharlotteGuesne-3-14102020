@@ -11,6 +11,23 @@ a {
   a:hover {
     color: #FF79DA; }
 
+.fa-heart {
+  color: black;
+  background-color: #F2F2F2;
+  position: absolute;
+  margin: -25px 0 0 42%;
+  border-radius: 50%;
+  padding: .2em; }
+
+.fa-heart::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out; }
+
+.fa-heart:hover::before {
+  color: red;
+  cursor: pointer; }
+
 .position {
   display: flex;
   justify-content: center;
@@ -57,14 +74,6 @@ header {
     padding-top: 50px; }
   #conteneur2 p {
     text-align: left; }
-
-.coeur .fas {
-  position: absolute;
-  margin: -25px 0 0 65%;
-  color: black; }
-
-.coeur .fas:hover {
-  color: #FF79DA; }
 
 h2 {
   margin: 90px 0 0 15%;
@@ -159,14 +168,15 @@ h5 {
   width: 20%; }
 
 .partage:active .prix {
-  margin-left: 70%; }
+  margin-left: 70%;
+  transition: margin-left 0.5s; }
 
 .partage:active .fas {
   opacity: 1;
   margin: 20px 0 0 0;
   padding: 0 0 0 35px;
   animation-name: turn;
-  animation-duration: 1s; }
+  animation-duration: 0.6s; }
 
 @keyframes turn {
   100% {
@@ -242,6 +252,9 @@ footer {
       margin: 0;
       width: 100%;
       max-height: 335px; }
+
+  .fa-heart {
+    margin: -25px 0 0 85%; }
 
   #conteneur2 {
     width: 100%;

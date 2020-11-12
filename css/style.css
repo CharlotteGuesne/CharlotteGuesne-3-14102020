@@ -11,6 +11,21 @@ a {
   a:hover {
     color: #FF79DA; }
 
+.fa-heart {
+  color: #eaeaea;
+  background-color: white;
+  border-radius: 50%;
+  padding: .2em; }
+
+.fa-heart::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out; }
+
+.fa-heart:hover::before {
+  color: red;
+  cursor: pointer; }
+
 #logo {
   display: none; }
 
@@ -110,13 +125,6 @@ article {
     color: white;
     background: #fface8;
     box-shadow: black; }
-
-.coeur .fas {
-  color: #eaeaea;
-  margin-top: 15px; }
-
-.coeur:hover .fas {
-  color: #FF79DA; }
 
 #conteneur2 {
   padding-top: -10px;
