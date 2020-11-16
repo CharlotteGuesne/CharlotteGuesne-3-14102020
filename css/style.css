@@ -13,9 +13,9 @@ a {
 
 .fa-heart {
   color: #eaeaea;
-  background-color: white;
+  background: white;
   border-radius: 50%;
-  padding: .2em; }
+  padding: 0.7em; }
 
 .fa-heart::before {
   content: "";
@@ -148,6 +148,7 @@ article {
   width: 50px;
   height: 50px;
   margin: 15px 0 0 20px;
+  padding-top: 3px;
   text-align: center;
   line-height: 45px; }
 .partage p {
@@ -170,6 +171,7 @@ article {
   background: #9356DC;
   color: white;
   margin: 27px 0 0 -10px;
+  padding-top: 3px;
   height: 25px;
   width: 25px;
   text-align: center;
@@ -179,7 +181,7 @@ article {
 #conteneur3 {
   display: flex;
   background: #F2F2F2;
-  padding-top: 40px 0 40px 0; }
+  padding: 40px 0 40px 0; }
   #conteneur3 h2 {
     text-align: center; }
 
@@ -193,9 +195,9 @@ article {
   flex-wrap: nowrap; }
 
 .new {
-  position: absolute;
+  position: relative;
   padding: 5px 15px 5px 15px;
-  margin: -240px 0 0 15%;
+  margin: -70% 0 0 75%;
   color: green;
   font-weight: bold;
   background: #99E2D0; }
@@ -203,10 +205,10 @@ article {
 .restaurant {
   margin: 2%;
   width: 33.33%;
-  border: 3px solid white;
+  margin-left: -5px;
   border-radius: 10px;
   background: white;
-  height: 300px;
+  height: 480px;
   animation: cartemenu 3s; }
 
 @keyframes cartemenu {
@@ -251,7 +253,6 @@ article {
     opacity: 1; } }
 img {
   width: 100%;
-  height: 75%;
   overflow-wrap: hidden;
   border-radius: 10px 10px 0px 0px; }
 
@@ -261,9 +262,9 @@ p {
   padding: 10px 0 10px 10px; }
 
 .coeur {
-  margin-top: -50px;
+  margin-top: -40px;
   width: 5%;
-  padding-left: 90%; }
+  padding-left: 85%; }
 
 .far {
   color: grey; }
@@ -299,9 +300,6 @@ footer {
   #menu {
     width: 90%; }
 
-  .new {
-    margin: -220px 0 0 57%; }
-
   #conteneur3 h2 {
     text-align: left;
     padding-bottom: 10px; }
@@ -311,22 +309,33 @@ footer {
     line-height: 30px;
     align-items: flex-start; }
 
+  .restaurant {
+    height: 280px;
+    margin: 2%; }
+
   h4 {
     padding-bottom: 10px; }
 
   .fas {
-    margin-top: -5px; } }
-@media screen and (max-width: 1250px) and (max-width: 950px) {
+    margin-top: -5px; }
+
+  .coeur {
+    padding-left: 80%; } }
+@media screen and (max-width: 950px) {
   #conteneur1 img {
     margin: 10px 0 -10px 0;
     height: 25px;
     width: 150px; }
 
   h2 {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 15px; }
 
   h6 {
     font-size: 14px; }
+
+  .new {
+    margin: -220px 0 0 70%; }
 
   .partage {
     display: table-column;
@@ -344,7 +353,7 @@ footer {
     width: 95%;
     max-height: 280px;
     max-width: 550px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 10px;
     box-shadow: 6px 6px 6px #F2F2F2; }
     .restaurant img {
       max-height: 200px; }
@@ -353,6 +362,9 @@ footer {
     margin: 10px 0 0 10px; }
 
   h4 {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+
+  .coeur {
+    padding-left: 85%; } }
 
 /*# sourceMappingURL=style.css.map */
