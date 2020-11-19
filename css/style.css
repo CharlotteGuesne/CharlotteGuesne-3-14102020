@@ -208,7 +208,7 @@ article {
   margin-left: -5px;
   border-radius: 10px;
   background: white;
-  height: 480px;
+  padding: 0 0 10px 0;
   animation: cartemenu 3s; }
 
 @keyframes cartemenu {
