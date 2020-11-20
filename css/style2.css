@@ -11,8 +11,14 @@ a {
   a:hover {
     color: #FF79DA; }
 
+h1 {
+  font-size: 45px;
+  font-family: 'Shrikhand', cursive;
+  margin-right: 40px; }
+
 .fa-heart {
-  color: black;
+  color: grey;
+  border: 1px solid black;
   background: #F2F2F2;
   position: absolute;
   margin: -60px 0 0 42%;
@@ -25,7 +31,7 @@ a {
   transition: color 1s ease-out; }
 
 .fa-heart:hover::before {
-  color: red;
+  color: #9356DC;
   cursor: pointer; }
 
 .position {
@@ -47,9 +53,6 @@ header {
   width: 100%;
   text-align: center;
   margin-bottom: 20px; }
-  #conteneur1 img {
-    height: 40px;
-    margin-left: -40px; }
 
 #image {
   display: flex;
@@ -67,9 +70,9 @@ header {
   width: 100%; }
   #conteneur2 h6 {
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-family: Shrikhand,cursive;
-    font-weight: bold;
+    font-weight: 300;
     padding-top: 50px; }
   #conteneur2 p {
     text-align: left; }
@@ -77,14 +80,14 @@ header {
 h2 {
   margin: 90px 0 0 15%;
   font-size: 28px;
-  font-style: italic;
-  text-align: left; }
-  h2:hover {
-    border-bottom: 2px solid #99E2D0;
-    padding-bottom: 12px; }
+  font-weight: 200;
+  text-align: left;
+  border-bottom: 2px solid #99e2d0;
+  padding-bottom: 12px;
+  width: 50px; }
 
 h5 {
-  font-style: italic;
+  font-weight: 100;
   margin-left: 5px; }
 
 .filtres {
@@ -133,7 +136,7 @@ h5 {
   justify-content: center;
   background: white;
   border-radius: 20px;
-  box-shadow: 6px 6px 6px grey;
+  box-shadow: 6px 6px 4px #eaeaea;
   margin: 30px 0 0 40%;
   padding: 10px 0 10px 30px;
   width: 40%;
@@ -156,11 +159,12 @@ h5 {
   right: 0;
   top: 0;
   background: aquamarine;
-  border-radius: 0px 20px 20px 0px; }
+  border-radius: 0px 10px 10px 0px; }
 
 .barre .fas {
   opacity: 0;
-  color: white; }
+  color: white;
+  font-size: 22px; }
 
 .partage:active .barre {
   width: 20%; }
@@ -181,7 +185,8 @@ h5 {
     transform: rotate(360deg); } }
 .prix {
   position: relative;
-  margin: -30px 0 0 85%; }
+  margin: -15px 0 0 85%;
+  font-weight: bold; }
 
 #conteneur3 {
   background: #F2F2F2;
@@ -219,7 +224,9 @@ footer {
   padding: 20px 0 20px 0; }
   footer h4 {
     font-size: 14px;
-    font-family: 'Shrikhand', cursive; }
+    font-weight: 100;
+    font-family: 'Shrikhand', cursive;
+    color: white; }
   footer p {
     font-size: 14px; }
 
@@ -230,14 +237,15 @@ footer {
   margin: 0 20px 0 20px; }
   .pflex:hover {
     color: #FF79DA; }
-
-.fas {
-  margin-right: 10px; }
+  .pflex .fas {
+    margin-right: 10px;
+    font-size: 12px; }
 
 @media screen and (max-width: 1250px) {
-  #conteneur1 img {
-    margin: 10px 0 -10px -40px;
-    height: 25px; }
+  h1 {
+    font-size: 28px;
+    font-family: 'Shrikhand', cursive;
+    padding-top: 10px; }
 
   #corps {
     display: flex;
@@ -261,7 +269,7 @@ footer {
       text-align: left;
       margin-left: 25px;
       font-size: 30px;
-      font-weight: bold; }
+      font-weight: 300; }
     #conteneur2 h2 {
       text-align: left;
       font-size: 18px;
@@ -284,7 +292,7 @@ footer {
 
   .prix {
     position: relative;
-    margin: -30px 0 0 85%; }
+    margin: -15px 0 0 85%; }
 
   #bouton {
     margin-top: 110px; }

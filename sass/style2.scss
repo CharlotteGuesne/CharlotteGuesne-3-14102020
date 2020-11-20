@@ -1,6 +1,6 @@
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
+$color-tertiary:#99e2d0;
 * {
 	padding: 0;
 	margin: 0;
@@ -15,8 +15,14 @@ a {
 		color: $color-secondary;
 	}
 }
+h1 {
+	font-size: 45px;
+	font-family: 'Shrikhand', cursive;
+	margin-right:40px;
+}
 .fa-heart {
-    color:black;
+	color:grey;
+	border:1px solid black;
 	background: #F2F2F2;
 	position: absolute;
 	margin: -60px 0 0 42%;
@@ -29,7 +35,7 @@ a {
     transition: color 1s ease-out;
 }
 .fa-heart:hover::before{
-    color: red;
+    color: $color-primary;
 	cursor: pointer;
 	 }
 .position {
@@ -53,10 +59,6 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
-	img {
-		height: 40px;
-		margin-left: -40px;
-	}
 }
 #image {
 	img {
@@ -75,9 +77,9 @@ header {
 	width: 100%;
 	h6 {
 		text-align: center;
-		font-size: 30px;
+		font-size: 28px;
 		font-family: Shrikhand,cursive;
-		font-weight: bold;
+		font-weight: 300;
 		padding-top: 50px;
 	}
 	p {
@@ -87,15 +89,14 @@ header {
 h2 {
 	margin: 90px 0 0 15%;
 	font-size: 28px;
-	font-style: italic;
+	font-weight: 200;
 	text-align: left;
-	&:hover{
-		border-bottom: 2px solid $color-tertiary;
-		padding-bottom: 12px;
-	}
+	border-bottom: 2px solid $color-tertiary;
+	padding-bottom: 12px;
+	width: 50px;
 }
 h5{
-	font-style: italic;
+	font-weight:100;
 	margin-left: 5px;
 }
 .filtres {
@@ -150,7 +151,7 @@ h5{
 	justify-content: center;
 	background: white;
 	border-radius: 20px;
-	box-shadow: 6px 6px 6px grey;
+	box-shadow: 6px 6px 4px #eaeaea;
 	margin: 30px 0 0 40%;
 	padding: 10px 0 10px 30px;
 	width: 40%;
@@ -173,11 +174,12 @@ h5{
     right: 0;
     top: 0;
 	background: aquamarine;
-	border-radius: 0px 20px 20px 0px;
+	border-radius: 0px 10px 10px 0px;
 		  }
 		  .barre .fas{
 			opacity:0;
 			color: white;
+			font-size: 22px;
 		  }
 		  .partage:active .barre {
 			width: 20%;
@@ -201,7 +203,8 @@ h5{
 
 .prix {
 	position: relative;
-	margin: -30px 0 0 85%;
+	margin: -15px 0 0 85%;
+	font-weight: bold;
 }
 #conteneur3 {
 	background: #F2F2F2;
@@ -242,7 +245,9 @@ footer {
 	padding: 20px 0 20px 0;
 	h4 {
 		font-size: 14px;
+		font-weight: 100;
 		font-family: 'Shrikhand', cursive;
+		color:white;
 	}
 	p {
 		font-size: 14px;
@@ -256,17 +261,18 @@ footer {
 		&:hover {
 			color: $color-secondary;
 		}
-}
-.fas {
-	margin-right: 10px;
+		.fas {
+		margin-right: 10px;
+		font-size:12px;
+	}
 }
 @media screen and (max-width: 1250px) {
-	#conteneur1 {
-		img {
-			margin: 10px 0 -10px -40px;
-			height: 25px;
-		}
-	}
+	
+	h1 {
+		font-size: 28px;
+		font-family: 'Shrikhand', cursive;
+		padding-top:10px;
+}
 	#corps {
 		display: flex;
 		flex-direction: column;
@@ -291,7 +297,7 @@ footer {
 			text-align: left;
 			margin-left: 25px;
 			font-size: 30px;
-			font-weight: bold;
+			font-weight: 300;
 		}
 		h2 {
 			text-align: left;
@@ -317,7 +323,7 @@ footer {
 	}
 	.prix {
 		position: relative;
-		margin: -30px 0 0 85%;
+		margin: -15px 0 0 85%;
 	}
 	#bouton {
 		margin-top: 110px;
