@@ -19,7 +19,7 @@ a {
     color: #eaeaea;
     background: white;
     border-radius: 50%;
-    padding:0.7em;
+	padding:0.7em;
 }
 .fa-heart::before {
     content: "";
@@ -27,8 +27,7 @@ a {
     transition: color 1s ease-out;
 }
 .fa-heart:hover::before{
-	color: red;
-	color:linear-gradient(to right, $color-secondary, $color-primary);
+	color:$color-primary;
 	cursor: pointer;
 }
 #logo{
@@ -172,10 +171,11 @@ article {
 		color: grey;
 		width: 50px;
 		height: 50px;
-		margin: 15px 0 0 20px;
+		margin: 15px 0 0 40px;
 		padding-top:3px;
 		text-align: center;
 		line-height: 45px;
+		font-size: 18px;
 	}
 	p {
 		border: 3px solid #F2F2F2;
@@ -246,6 +246,9 @@ article {
 	box-shadow: 6px 6px 6px grey;
 	padding: 0 0 10px 0;
 	animation: cartemenu 3s;
+	.fas{
+		font-size: 20px;
+	}
 }
 	@keyframes cartemenu{
 		0%{
@@ -314,9 +317,6 @@ p {
 	width: 5%;
 	padding-left: 85%;
 }
-.far {
-	color: grey;
-}
 footer {
 	width: 100%;
 	background: #353535;
@@ -337,14 +337,12 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	margin: 0 20px 0 20px;
-		&:hover {
-			color: $color-secondary;
+		&a:hover{
+			color:$color-secondary;
 		}
-}
-.fas {
-	margin: 10px 10px 0 0;
-	height: 10px;
+	.fas{
+	font-size: 12px;
+	padding-right:10px; }
 }
 @media screen and (max-width: 1250px) {
 	.filtres2 {
@@ -362,19 +360,31 @@ footer {
 	}
 	.position {
 		flex-direction: column;
-		line-height: 30px;
 		align-items: flex-start;
 	}
 	.restaurant {
 		height: 280px;
 		margin:2%;
 	}
+	.restaurant {
+		.fas{
+			font-size: 18px;
+			margin: 35px 0 0 -20px;
+		}
+	}
+	.restaurant {
+		.new{
+			margin: -205px 0 0 100px;
+		}
+	}
+	.partage {
+		.fas {
+			margin: 15px 0 0 30px;
+		}
+	}
 	h4 {
 		padding-bottom: 10px;
     }
-    .fas {
-		margin-top: -5px;
-	}
 	.coeur {
 		padding-left: 80%;
 	}
@@ -401,7 +411,7 @@ footer {
         margin: 2%;
             p {
                 padding: 20px 140px 20px 75px;
-            }
+			}
 }
     #conteneur2 {
         h2 {
@@ -420,8 +430,16 @@ footer {
                 max-height: 200px;
                 }
 }
-	.pflex .fas{
-		margin:10px 0 0 10px;
+.restaurant {
+	.fas{
+		font-size: 18px;
+		margin: 5px 0 0 -10px;
+	}
+}
+.restaurant {
+	.new{
+		margin: -235px 0 0 300px;
+	}
 }
 	h4{
 		margin-left:10px;
