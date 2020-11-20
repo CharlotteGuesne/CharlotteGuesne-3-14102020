@@ -24,17 +24,20 @@ a {
 
 .fa-heart:hover::before {
   color: red;
+  color: linear-gradient(to right, #FF79DA, #9356DC);
   cursor: pointer; }
 
 #logo {
   display: none; }
+
+.bouton1 {
+  background: #eaeaea; }
 
 input::placeholder {
   font-weight: bold;
   padding: 5px;
   font-weight: 600;
   color: black;
-  background: #eaeaea;
   text-align: center; }
 
 input:focus::placeholder {
@@ -51,11 +54,15 @@ input {
   border: 3px solid #137b85;
   border-radius: 50%;
   border-top-color: #99E2D0;
-  animation: rotation 1s ease-in-out infinite; }
+  animation: rotation 4s ease-in-out forwards; }
 
 @keyframes rotation {
-  to {
-    transform: rotate(360deg); } }
+  0% {
+    transform: rotate(0deg);
+    opacity: 1; }
+  100% {
+    transform: rotate(1260deg);
+    opacity: 0; } }
 .position {
   display: flex;
   justify-content: center;
@@ -68,9 +75,10 @@ input {
 #conteneur1 {
   width: 100%;
   text-align: center; }
-  #conteneur1 img {
-    height: 50px;
-    width: 300px; }
+
+h1 {
+  font-size: 45px;
+  font-family: 'Shrikhand', cursive; }
 
 .info {
   width: 100%;
@@ -89,13 +97,13 @@ h2 {
 
 h6 {
   font-size: 18px;
-  font-style: italic;
+  font-weight: 100;
   text-align: center;
   padding-top: 10px; }
 
 h5 {
-  font-size: 16px;
-  font-style: italic;
+  font-size: 14px;
+  font-weight: 100;
   margin: -5px 0 0 10px; }
 
 article {
@@ -115,6 +123,7 @@ article {
 .explore {
   background: linear-gradient(to right, #FF79DA, #9356DC);
   color: white;
+  font-size: 15px;
   width: 230px;
   margin-top: 30px;
   padding: 10px 20px;
@@ -159,12 +168,14 @@ article {
   padding: 20px 100px 20px 95px;
   margin-top: 5px;
   width: 425px; }
-  .partage p:hover {
-    background: #e4d5f6;
-    border: 3px solid #e4d5f6;
-    box-shadow: #343434; }
-    .partage p:hover a {
-      color: black; }
+.partage:hover p {
+  background: #e4d5f6;
+  border: 3px solid #e4d5f6;
+  box-shadow: #343434; }
+.partage:hover a {
+  color: black; }
+.partage:hover .fas {
+  color: #9356DC; }
 
 .etape {
   position: absolute;
@@ -208,6 +219,7 @@ article {
   margin-left: -5px;
   border-radius: 10px;
   background: white;
+  box-shadow: 6px 6px 6px grey;
   padding: 0 0 10px 0;
   animation: cartemenu 3s; }
 
@@ -276,6 +288,7 @@ footer {
   padding: 20px 0 20px 0; }
   footer h4 {
     font-size: 14px;
+    font-weight: 500;
     font-family: 'Shrikhand', cursive;
     margin-top: 10px; }
   footer p {
@@ -285,12 +298,14 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
+  align-items: baseline;
   margin: 0 20px 0 20px; }
   .pflex:hover {
     color: #FF79DA; }
 
 .fas {
-  margin: 10px 10px 0 0; }
+  margin: 10px 10px 0 0;
+  height: 10px; }
 
 @media screen and (max-width: 1250px) {
   .filtres2 {
@@ -322,10 +337,10 @@ footer {
   .coeur {
     padding-left: 80%; } }
 @media screen and (max-width: 950px) {
-  #conteneur1 img {
-    margin: 10px 0 -10px 0;
-    height: 25px;
-    width: 150px; }
+  h1 {
+    font-size: 28px;
+    font-family: 'Shrikhand', cursive;
+    padding-top: 10px; }
 
   h2 {
     font-size: 20px;
@@ -353,8 +368,7 @@ footer {
     width: 95%;
     max-height: 280px;
     max-width: 550px;
-    margin: 0 0 10px 10px;
-    box-shadow: 6px 6px 6px #F2F2F2; }
+    margin: 0 0 25px 10px; }
     .restaurant img {
       max-height: 200px; }
 
