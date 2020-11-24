@@ -142,9 +142,9 @@ article {
 	box-shadow: 6px 6px 6px grey;
 	text-decoration: none;
 	&:hover{
-		color:white;
-		background:lighten($color-secondary, 10%);
-		box-shadow: 6px 6px 6px darken (grey, 20%);
+			color:white;
+			background:lighten( $color-secondary, 10%);
+			box-shadow: 6px 6px 6px darken( grey, 20%);
 	}
 }
 #conteneur2 {
@@ -189,7 +189,6 @@ article {
 			p {
 			background: lighten($color-primary, 30);
 			border: 3px solid lighten($color-primary, 30);
-			box-shadow: 6 px 6px 6px darken($color: grey, $amount: 30);
 		}
 			a{
 				color:black;

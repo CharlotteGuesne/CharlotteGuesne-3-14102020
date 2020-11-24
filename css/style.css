@@ -132,7 +132,7 @@ article {
   .explore:hover {
     color: white;
     background: #fface8;
-    box-shadow: 6px 6px 6px darken grey, 20%; }
+    box-shadow: 6px 6px 6px #4d4d4d; }
 
 #conteneur2 {
   width: 100%; }
@@ -169,8 +169,7 @@ article {
   width: 425px; }
 .partage:hover p {
   background: #e4d5f6;
-  border: 3px solid #e4d5f6;
-  box-shadow: 6 px 6px 6px #343434; }
+  border: 3px solid #e4d5f6; }
 .partage:hover a {
   color: black; }
 .partage:hover .fas {

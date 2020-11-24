@@ -217,7 +217,7 @@ h5{
 #bouton {
 	text-align: center;
 	margin-top: 10px;
-	transform: scal(1);
+	transform: scale(1);
 	transition: transform 400ms;
 	&:hover {
 		transform: scale(1.15);
@@ -238,7 +238,7 @@ h5{
 	&:hover{
 		color:white;
 		background:lighten( $color-secondary, 10%);
-		box-shadow: darken( black, 20%);
+		box-shadow: 6px 6px 6px darken( grey, 20%);
 	}
 }
 footer {

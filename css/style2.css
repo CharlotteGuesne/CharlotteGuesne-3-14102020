@@ -200,7 +200,7 @@ h5 {
 #bouton {
   text-align: center;
   margin-top: 10px;
-  transform: scal(1);
+  transform: scale(1);
   transition: transform 400ms; }
   #bouton:hover {
     transform: scale(1.15); }
@@ -219,7 +219,7 @@ h5 {
   .explore:hover {
     color: white;
     background: #fface8;
-    box-shadow: black; }
+    box-shadow: 6px 6px 6px #4d4d4d; }
 
 footer {
   width: 100%;
