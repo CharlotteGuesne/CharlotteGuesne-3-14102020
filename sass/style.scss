@@ -125,7 +125,7 @@ article {
 #bouton {
 	text-align: center;
 	margin: 30px 0 30px 0;
-	transform: scal(1);
+	transform: scale(1);
 	transition: transform 400ms; 
 	&:hover{
 		transform: scale(1.15);
@@ -144,11 +144,10 @@ article {
 	&:hover{
 		color:white;
 		background:lighten($color-secondary, 10%);
-		box-shadow: darken( black, 20%);
+		box-shadow: 6px 6px 6px darken (grey, 20%);
 	}
 }
 #conteneur2 {
-	padding-top: -10px;
 	width: 100%;
 	p {
 		text-align: center;
@@ -190,7 +189,7 @@ article {
 			p {
 			background: lighten($color-primary, 30);
 			border: 3px solid lighten($color-primary, 30);
-			box-shadow: darken($color: grey, $amount: 30);
+			box-shadow: 6 px 6px 6px darken($color: grey, $amount: 30);
 		}
 			a{
 				color:black;
@@ -209,7 +208,6 @@ article {
 	height: 25px;
 	width: 25px;
 	text-align: center;
-	line-height: -10px;
 	border-radius: 100px;
 }
 #conteneur3 {
@@ -304,7 +302,6 @@ article {
 }
 img {
 	width: 100%;
-	overflow-wrap: hidden;
 	border-radius: 10px 10px 0px 0px;
 }
 p {
@@ -321,7 +318,7 @@ footer {
 	width: 100%;
 	background: #353535;
 	color:white;
-	padding: 20px 0 20px 0;
+	padding: 15px 0 15px 0;
 	h4 {
 		font-size: 14px;
 		font-weight:500;

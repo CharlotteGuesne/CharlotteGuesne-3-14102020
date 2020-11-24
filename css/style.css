@@ -114,7 +114,7 @@ article {
 #bouton {
   text-align: center;
   margin: 30px 0 30px 0;
-  transform: scal(1);
+  transform: scale(1);
   transition: transform 400ms; }
   #bouton:hover {
     transform: scale(1.15); }
@@ -132,10 +132,9 @@ article {
   .explore:hover {
     color: white;
     background: #fface8;
-    box-shadow: black; }
+    box-shadow: 6px 6px 6px darken grey, 20%; }
 
 #conteneur2 {
-  padding-top: -10px;
   width: 100%; }
   #conteneur2 p {
     text-align: center; }
@@ -171,7 +170,7 @@ article {
 .partage:hover p {
   background: #e4d5f6;
   border: 3px solid #e4d5f6;
-  box-shadow: #343434; }
+  box-shadow: 6 px 6px 6px #343434; }
 .partage:hover a {
   color: black; }
 .partage:hover .fas {
@@ -186,7 +185,6 @@ article {
   height: 25px;
   width: 25px;
   text-align: center;
-  line-height: -10px;
   border-radius: 100px; }
 
 #conteneur3 {
@@ -267,7 +265,6 @@ article {
     opacity: 1; } }
 img {
   width: 100%;
-  overflow-wrap: hidden;
   border-radius: 10px 10px 0px 0px; }
 
 p {
@@ -284,7 +281,7 @@ footer {
   width: 100%;
   background: #353535;
   color: white;
-  padding: 20px 0 20px 0; }
+  padding: 15px 0 15px 0; }
   footer h4 {
     font-size: 14px;
     font-weight: 500;
