@@ -304,7 +304,8 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: baseline; }
+  align-items: baseline;
+  margin-left: 15px; }
   .pflexa:hover {
     color: #FF79DA; }
   .pflex .fas {
