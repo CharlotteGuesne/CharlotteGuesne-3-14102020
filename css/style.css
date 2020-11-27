@@ -19,13 +19,22 @@ a {
 
 .fa-heart::before {
   content: "";
-  font-weight: bold;
-  transition: color 1s ease-out; }
+  font-weight: bold; }
 
 .fa-heart:hover::before {
-  color: #9356DC;
-  cursor: pointer; }
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  animation: fondu 1s ease-in-out; }
 
+@keyframes fondu {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 #logo {
   display: none; }
 
@@ -220,7 +229,8 @@ article {
   padding: 0 0 10px 0;
   animation: cartemenu 3s; }
   .restaurant .fas {
-    font-size: 20px; }
+    font-size: 25px;
+    margin-left: -15px; }
 
 @keyframes cartemenu {
   0% {
@@ -321,8 +331,8 @@ footer {
     margin: 2%; }
 
   .restaurant .fas {
-    font-size: 18px;
-    margin: 35px 0 0 -20px; }
+    font-size: 25px;
+    margin: 35px 0 0 -25px; }
 
   .restaurant .new {
     margin: -205px 0 0 100px; }
@@ -372,8 +382,8 @@ footer {
       max-height: 200px; }
 
   .restaurant .fas {
-    font-size: 18px;
-    margin: 5px 0 0 -10px; }
+    font-size: 25px;
+    margin: -5px 0 0 -15px; }
 
   .restaurant .new {
     margin: -235px 0 0 300px; }

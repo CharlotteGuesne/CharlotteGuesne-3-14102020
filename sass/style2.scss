@@ -20,24 +20,6 @@ h1 {
 	font-family: 'Shrikhand', cursive;
 	margin-right:40px;
 }
-.fa-heart {
-	color:grey;
-	background: #F2F2F2;
-	position: absolute;
-	margin: -80px 0 0 42%;
-    border-radius: 50%;
-	padding:2em;
-	font-size: 25px;
-}
-.fa-heart::before {
-    content: "";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-    color: $color-primary;
-	cursor: pointer;
-	 }
 .position {
 	a{
 		color:white;
@@ -67,6 +49,32 @@ header {
 }
 	display: flex;
 	background: #F2F2F2;
+}
+.coeur{
+	.far {
+	position: absolute;
+	color:black;
+	font-size: 25px;
+	margin: -35px 0 0 45%;
+}
+	.far:hover::before {
+	background:linear-gradient(to right, $color-secondary, $color-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	animation: fondu 1s ease-in-out;
+	}
+	  @keyframes fondu {
+		0% { 
+			opacity:0; 
+		}
+		50% { 
+			opacity:0.5;
+		}
+		100% { 
+			opacity:1;
+		}
+	}
 }
 #placement{
 	display:flex;
@@ -291,9 +299,11 @@ footer {
 			
 		}
 	}
-	.fa-heart {
-		margin: -80px 0 0 75%;
+	.coeur{
+	.far {
+		margin: -35px 0 0 80%;
 	}
+}
 	#conteneur2 {
 		width: 100%;
 		margin-top: -60px;
@@ -309,9 +319,6 @@ footer {
 			font-size: 18px;
 			margin: 30px 0 80px 0;
 		}
-	}
-	.far {
-		margin-left: 70%;
 	}
 	.filtres2 {
 		flex-wrap: wrap;
