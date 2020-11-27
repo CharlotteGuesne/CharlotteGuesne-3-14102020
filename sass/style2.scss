@@ -43,9 +43,12 @@ header {
 	margin-bottom: 20px;
 }
 #image {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 	img {
 		margin: 5%;
-		width: 100%;	
+		height: 500px;	
 }
 	display: flex;
 	background: #F2F2F2;
@@ -78,10 +81,11 @@ header {
 }
 #placement{
 	display:flex;
-	width: 100%;
+	background:#F2F2F2;
 }
 #corps {
 	display: flex;
+	margin:2%;
 	width: 40%;
 }
 #conteneur2 {
@@ -291,13 +295,13 @@ footer {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		margin:0;
 	}
 	#image {
 		width: 100%;
 		img {
 			margin: 0;
-			width: 100%;
-			
+			height: 400px;	
 		}
 	}
 	.coeur{
