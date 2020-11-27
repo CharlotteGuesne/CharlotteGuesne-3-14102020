@@ -197,6 +197,7 @@ article {
 
 #conteneur3 {
   display: flex;
+  overflow: hidden;
   background: #F2F2F2;
   padding: 40px 0 40px 0; }
   #conteneur3 h2 {
@@ -290,14 +291,17 @@ footer {
   width: 100%;
   background: #353535;
   color: white;
-  padding: 15px 0 15px 0; }
+  padding: 10px 0 10px 0; }
   footer h4 {
     font-size: 14px;
     font-weight: 500;
     font-family: 'Shrikhand', cursive;
-    margin-top: 10px; }
+    margin: 13px 0 0 5px; }
   footer p {
     font-size: 14px; }
+
+.position {
+  margin: 3%; }
 
 .pflex {
   color: white;

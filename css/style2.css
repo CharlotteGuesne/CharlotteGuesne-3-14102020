@@ -195,7 +195,8 @@ h5 {
 #conteneur3 {
   background: #F2F2F2;
   margin-top: -70px;
-  padding: 20px 0 80px 0; }
+  padding: 20px 0 80px 0;
+  overflow: hidden; }
 
 #bouton {
   text-align: center;
