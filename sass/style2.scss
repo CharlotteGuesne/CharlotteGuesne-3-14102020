@@ -1,6 +1,6 @@
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
-$color-tertiary:#99e2d0;
+$color-tertiary:#99E2D0;
 * {
 	padding: 0;
 	margin: 0;
@@ -242,49 +242,54 @@ h5{
 .explore {
 	background:linear-gradient(to right, $color-secondary, $color-primary);
 	color: white;
+	font-size: 16px;
+	font-weight: bold;
 	width: 230px;
 	margin-top: 30px;
-	padding: 10px 40px;
+	padding: 13px 48px;
 	border-radius: 20px;
-	box-shadow: 6px 6px 6px grey;
+	box-shadow: 6px 6px 6px #aaaaaa;
 	text-decoration: none;
 	&:hover{
 		color:white;
 		background:lighten( $color-secondary, 10%);
-		box-shadow: 6px 6px 6px darken( grey, 20%);
+		box-shadow: 6px 6px 6px darken( #aaaaaa, 20%);
 	}
 }
 footer {
 	width: 100%;
 	background: #353535;
 	color:white;
-	padding: 25px 0 25px 0;
+	padding: 20px 0 20px 0;
 	h4 {
 		font-size: 14px;
-		font-weight: 100;
+		font-weight:500;
 		font-family: 'Shrikhand', cursive;
-		color:white;
+		margin:1px 0 0 5px;
+		margin-bottom:10px;
 	}
 	p {
 		font-size: 14px;
+		padding: 0;
 	}
 }
 .pflex {
 	color:white;
 	display: flex;
 	justify-content: center;
-	margin: 5px 20px 5px 20px;
-		&:hover {
-			color: $color-secondary;
+	align-items: baseline;
+	margin-left:15px;
+		&a:hover{
+			color:$color-secondary;
 		}
-		.fas {
-		margin-right: 10px;
-		font-size:12px;
-	}
+	.fas{
+	font-size: 12px;
+	padding-right: 10px; }
 }
 @media screen and (max-width: 1250px) {
 	#placement{
 		flex-direction: column;
+		overflow:hidden;
 	}
 	h1 {
 		font-size: 28px;

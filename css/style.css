@@ -54,6 +54,15 @@ input:focus::placeholder {
 input {
   border: 1px solid #eaeaea; }
 
+article {
+  margin-top: -30px;
+  background: #F2F2F2;
+  padding: 40px 0 30px 0;
+  text-align: center; }
+
+article .restaurant {
+  text-align: left; }
+
 #loading {
   display: inline-block;
   width: 50px;
@@ -94,7 +103,8 @@ h1 {
   justify-content: center;
   margin: 30px 0px 30px 0px;
   padding: 10px 0px 10px 0px;
-  background: #eaeaea; }
+  background: #eaeaea;
+  box-shadow: 6px 0px 6px grey; }
   .info .fas {
     margin: -2px 0 0 -30px;
     color: black; }
@@ -105,20 +115,14 @@ h2 {
 
 h6 {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 400;
   text-align: center;
   padding-top: 10px; }
 
 h5 {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
   margin: -5px 0 0 10px; }
-
-article {
-  margin-top: -30px;
-  background: #F2F2F2;
-  padding: 40px 0 30px 0;
-  text-align: center; }
 
 #bouton {
   text-align: center;
@@ -131,17 +135,18 @@ article {
 .explore {
   background: linear-gradient(to right, #FF79DA, #9356DC);
   color: white;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   width: 230px;
   margin-top: 30px;
-  padding: 10px 20px;
+  padding: 13px 25px;
   border-radius: 20px;
-  box-shadow: 6px 6px 6px grey;
+  box-shadow: 6px 6px 6px #aaaaaa;
   text-decoration: none; }
   .explore:hover {
     color: white;
     background: #fface8;
-    box-shadow: 6px 6px 6px #4d4d4d; }
+    box-shadow: 6px 6px 6px #777777; }
 
 #conteneur2 {
   width: 100%; }
@@ -158,31 +163,33 @@ article {
   .filtres2 p {
     font-size: 16px; }
 
-.partage .fas {
-  position: absolute;
-  color: grey;
-  width: 50px;
-  height: 50px;
-  margin: 15px 0 0 40px;
-  padding-top: 3px;
-  text-align: center;
-  line-height: 45px;
-  font-size: 18px; }
-.partage p {
-  border: 3px solid #F2F2F2;
-  background: #F2F2F2;
-  border-radius: 20px;
-  box-shadow: 6px 6px 6px grey;
-  padding: 20px 100px 20px 95px;
-  margin-top: 5px;
-  width: 425px; }
-.partage:hover p {
-  background: #e4d5f6;
-  border: 3px solid #e4d5f6; }
-.partage:hover a {
-  color: black; }
-.partage:hover .fas {
-  color: #9356DC; }
+.partage {
+  cursor: pointer; }
+  .partage .fas {
+    position: absolute;
+    color: grey;
+    width: 50px;
+    height: 50px;
+    margin: 15px 0 0 40px;
+    padding-top: 3px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px; }
+  .partage p {
+    border: 3px solid #F2F2F2;
+    background: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #aaaaaa;
+    padding: 20px 100px 20px 95px;
+    margin-top: 5px;
+    width: 425px; }
+  .partage:hover p {
+    background: #e4d5f6;
+    border: 3px solid #e4d5f6; }
+  .partage:hover a {
+    color: black; }
+  .partage:hover .fas {
+    color: #9356DC; }
 
 .etape {
   position: absolute;
@@ -199,6 +206,7 @@ article {
   display: flex;
   overflow: hidden;
   background: #F2F2F2;
+  justify-content: space-around;
   padding: 40px 0 40px 0; }
   #conteneur3 h2 {
     text-align: center; }
@@ -226,7 +234,7 @@ article {
   margin-left: -5px;
   border-radius: 10px;
   background: white;
-  box-shadow: 6px 6px 6px grey;
+  box-shadow: 6px 6px 6px #aaaaaa;
   padding: 0 0 10px 0;
   animation: cartemenu 3s; }
   .restaurant .fas {
@@ -291,14 +299,16 @@ footer {
   width: 100%;
   background: #353535;
   color: white;
-  padding: 10px 0 10px 0; }
+  padding: 20px 0 20px 0; }
   footer h4 {
     font-size: 14px;
     font-weight: 500;
     font-family: 'Shrikhand', cursive;
-    margin: 13px 0 0 5px; }
+    margin: 5px 0 0 5px;
+    margin-bottom: 10px; }
   footer p {
-    font-size: 14px; }
+    font-size: 14px;
+    padding: 0; }
 
 .pflex {
   color: white;
@@ -377,23 +387,24 @@ footer {
 
   .restaurant {
     width: 95%;
-    max-height: 280px;
-    max-width: 550px;
-    margin: 0 0 25px 10px; }
+    margin: 0 0 25px 15px;
+    box-shadow: 6px 6px 6px  #aaaaaa; }
     .restaurant img {
-      max-height: 200px; }
+      height: 200px; }
 
   .restaurant .fas {
     font-size: 25px;
     margin: -5px 0 0 -15px; }
 
   .restaurant .new {
-    margin: -235px 0 0 300px; }
+    margin: 0 0 0 300px;
+    top: -250px; }
 
   h4 {
     margin-left: 10px; }
 
   .coeur {
+    position: relative;
     padding-left: 85%; } }
 
 /*# sourceMappingURL=style.css.map */
