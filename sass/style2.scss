@@ -103,13 +103,14 @@ header {
 	}
 }
 h2 {
-	margin: 90px 0 0 15%;
+	margin: 150px 0 0 15%;
 	font-size: 28px;
 	font-weight: 200;
 	text-align: left;
 	border-bottom: 2px solid $color-tertiary;
 	padding-bottom: 12px;
 	width: 50px;
+	padding: 50px 0 0 0;
 }
 h5{
 	font-weight:100;
@@ -166,6 +167,7 @@ h5{
 .partage {
 	justify-content: center;
 	background: white;
+	top:-60px;
 	border-radius: 20px;
 	box-shadow: 6px 6px 4px #eaeaea;
 	margin: 30px 0 0 40%;
@@ -197,14 +199,14 @@ h5{
 			color: white;
 			font-size: 22px;
 		  }
-		  .partage:active .barre {
+		  .partage:hover .barre {
 			width: 20%;
 			 }
-		  .partage:active .prix {
+		  .partage:hover .prix {
 			margin-left:70%;
 			transition: margin-left 0.5s;
 			}
-		  .partage:active .fas {
+		  .partage:hover .fas {
 			opacity:1;
 			margin: 20px 0 0 0;
 			padding:0 0 0 35px;

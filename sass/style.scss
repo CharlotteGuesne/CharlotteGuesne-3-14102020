@@ -7,6 +7,7 @@ $color-tertiary:#99E2D0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -71,26 +72,44 @@ article {
 article .restaurant{
 	text-align: left;
 }
-#loading {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	margin-top: 20px;
-	border: 3px solid #137b85;
-	border-radius: 50%;
-	border-top-color:$color-tertiary;
-	animation: rotation 4s ease-in-out forwards;
+.loader-container{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+	width: 100%;
+	height:100%;
+        background: $color-primary; 
+        text-align:center; 
+        transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+            p{
+                text-align: center;
+                margin-top:200px;
+                color:white;
+            }
 }
-  @keyframes rotation {
-	0% { 
-		transform: rotate(0deg);
-		opacity:1; 
-	}
-	100% { 
-		transform: rotate(1260deg);
-		opacity:0;
-	}
+.loader-container.hidden{
+        opacity:0;
+        visibility:hidden; 
 }
+#loader {
+        position: absolute;
+        display: inline-block;
+        margin:20px 0 0 -20px;
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255,255,255,.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: rotation 1s ease-in-out infinite;
+        -webkit-animation: rotation 1s ease-in-out infinite;
+      }
+      @keyframes rotation {
+        to { -webkit-transform: rotate(360deg); }
+      }
+      @-webkit-keyframes rotation {
+        to { -webkit-transform: rotate(360deg); }
+      }
 .position {
 	display: flex;
 	justify-content: center;
@@ -108,7 +127,8 @@ article .restaurant{
 	text-align: center;
 }
 h1 {
-	font-size: 45px;
+        margin:10px 0 10px 0;
+        font-size: 45px;
 	font-family: 'Shrikhand', cursive;
 }
 .info {
@@ -141,7 +161,7 @@ h5{
 }
 #bouton {
 	text-align: center;
-	margin: 30px 0 30px 0;
+	margin: 40px 0 40px 0;
 	transform: scale(1);
 	transition: transform 400ms; 
 	&:hover{
@@ -250,8 +270,8 @@ h5{
 }
 .new {
 	position: relative;
-	padding: 5px 15px 5px 15px;
-	margin: -70% 0 0 75%;
+	padding: 5px 75px 5px 15px;
+	margin: -70% 30px 0 75%;
 	color: green;
 	font-weight: bold;
 	background: #99E2D0;
@@ -326,6 +346,21 @@ img {
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
+.fond_image{
+	background:white;
+	display:inline-block;
+	}
+	.fond_image img{
+	-moz-transition: opacity 0.7s;
+	-webkit-transition: opacity 0.7s;
+	-o-transition: opacity 0.7s;
+	}
+	.fond_image img:hover{
+	opacity:0.5;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	}
 p {
 	font-size: 18px;
 	line-height: 25px;
@@ -360,7 +395,7 @@ footer {
 	align-items: baseline;
 	margin-left:15px;
 		&a:hover{
-			color:$color-secondary;
+			color:$color-primary;
 		}
 	.fas{
 	font-size: 12px;
@@ -396,7 +431,8 @@ footer {
 	}
 	.restaurant {
 		.new{
-			margin: -205px 0 0 100px;
+			margin: 0 30px 0 50%;
+			top:-230px;
 		}
 	}
 	.partage {
@@ -424,9 +460,6 @@ footer {
 }
     h6 {
         font-size: 14px;
-}
-	.new {
-		margin: -220px 0 0 70%;
 }
     .partage {
         display: table-column;
@@ -459,7 +492,7 @@ footer {
 }
 .restaurant {
 	.new{
-		margin: 0 0 0 300px;
+		margin: 0 30px 0 70%;
 		top:-250px;
 	}
 }

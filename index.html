@@ -21,6 +21,11 @@
     </head>
 
     <body>
+       <div class="loader-container">
+        <p> Veuillez patienter </p>    
+        <div id="loader"></div> 
+        </div>  
+        
         <header>
 	        <div id="conteneur1">
                 <h1>ohmyfood</h1>    
@@ -38,8 +43,7 @@
                 <h6> Découvrez des restaurants d'exception, séléctionnés par nos soins.</h6>                 
                     <div id="bouton">
                         <a class="explore" id="texte" href="#">Explorer nos restaurants</a>
-                    </div>
-                        <div id="loading"></div>        
+                    </div>       
         </article>
         
 	    <div id="conteneur2">
@@ -82,46 +86,50 @@
 
                         <div class="dFlex">
 
-                        <div class="restaurant">
-                            <img src="images/jay.jpg" alt="plat la palette du gout"/>
+                        <div class="restaurant"><a href="palette.html">
+                            <div class="fond_image">
+                            <img src="images/jay.jpg" alt="plat la palette du gout"/></div>
                             
-                                <p><a href="palette.html"><strong>La palette du goût</strong></a></p>
+                                <p><strong>La palette du goût</strong></p>
                                     <h5>Ménilmontant</h5>
                                         <div class="coeur"><a href="#">
                                             <i class="fas fa-heart"></i></a>
                                         </div>
-                                            <div class="new"> Nouveau </div>
+                                            <div class="new"> Nouveau </div></a>
                         </div>
 
-                        <div class="restaurant menu1">
-                            <img src="images/stil.jpg" alt="plat la note enchantee"/>
+                        <div class="restaurant menu1"><a href="note.html">
+                            <div class="fond_image">
+                            <img src="images/stil.jpg" alt="plat la note enchantee"/></div>
                             
-                                <p><a href="note.html"><strong>La note enchantée</strong></a></p>
+                                <p><strong>La note enchantée</strong></p>
                                     <h5>Charonne</h5>
                                         <div class="coeur"><a href="#">
                                             <i class="fas fa-heart"></i></a>
                                         </div>
-                                            <div class="new"> Nouveau </div>
+                                            <div class="new"> Nouveau </div></a>
                         </div>
 
-                        <div class="restaurant menu2">
-                            <img src="images/toa.jpg" alt="plat a la française"/>
+                        <div class="restaurant menu2"><a href="francaise.html">
+                            <div class="fond_image">
+                            <img src="images/toa.jpg" alt="plat a la française"/></div>
                             
-                                <p><a href="francaise.html"><strong>À la française</strong></a></p>
+                                <p><strong>À la française</strong></p>
                                     <h5>Cité Rouge</h5>
                                         <div class="coeur"><a href="#">
                                             <i class="fas fa-heart"></i></a>
-                                        </div>
+                                        </div></a>
                         </div>
 
-                        <div class="restaurant menu3">
-                            <img src="images/louis.jpg" alt="plat le délice des sens"/>
+                        <div class="restaurant menu3"><a href="délice.html">
+                            <div class="fond_image">
+                            <img src="images/louis.jpg" alt="plat le délice des sens"/></div>
                             
-                                <p><a href="délice.html"><strong>Le délice des sens</strong></a></p>
+                                <p><strong>Le délice des sens</strong></p>
                                     <h5>Folie-Méricourt</h5>
                                         <div class="coeur"><a href="#">
                                             <i class="fas fa-heart"></i></a>
-                                        </div>
+                                        </div></a>
                         </div>
 
                         </div> 
@@ -155,6 +163,8 @@
             </div>
     </footer>
  
+    <script src="./js/app.js"></script>  
+
 </body>
 
 </html>
