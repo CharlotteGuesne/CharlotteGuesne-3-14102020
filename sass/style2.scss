@@ -7,6 +7,7 @@ $color-tertiary:#99E2D0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -174,6 +175,7 @@ h5{
 	padding: 10px 0 10px 30px;
 	width: 40%;
 	height: 60px;
+	cursor:pointer;
 	transition-property: left;
 		-webkit-transition-property: left;
 		transition-duration: .5s;
@@ -190,7 +192,7 @@ h5{
     height: 100%;
     position: absolute;
     right: 0;
-    top: 0;
+	top: 0;
 	background: aquamarine;
 	border-radius: 0px 10px 10px 0px;
 		  }
@@ -206,6 +208,7 @@ h5{
 			margin-left:70%;
 			transition: margin-left 0.5s;
 			}
+			
 		  .partage:hover .fas {
 			opacity:1;
 			margin: 20px 0 0 0;

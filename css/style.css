@@ -125,7 +125,7 @@ h1 {
   margin: 30px 0px 30px 0px;
   padding: 10px 0px 10px 0px;
   background: #eaeaea;
-  box-shadow: 6px 0px 6px grey; }
+  box-shadow: inset 0px 2px 2px grey; }
   .info .fas {
     margin: -2px 0 0 -30px;
     color: black; }
@@ -233,7 +233,7 @@ h5 {
     text-align: center; }
 
 #menu {
-  margin: 10px 25px 10px 25px;
+  margin: 10px 25px 10px 15px;
   border-radius: 10px;
   width: 100%; }
 
@@ -243,8 +243,9 @@ h5 {
 
 .new {
   position: relative;
-  padding: 5px 75px 5px 15px;
-  margin: -70% 30px 0 75%;
+  padding: 5px 5% 5px 5%;
+  margin: -75% 30px 0 61%;
+  text-align: center;
   color: green;
   font-weight: bold;
   background: #99E2D0; }
@@ -358,7 +359,7 @@ footer {
     font-size: 12px;
     padding-right: 10px; }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1270px) {
   .filtres2 {
     flex-wrap: wrap;
     width: 100%; }
@@ -383,7 +384,8 @@ footer {
     margin: 35px 0 0 -25px; }
 
   .restaurant .new {
-    margin: 0 30px 0 50%;
+    margin: 0 30px 0 40%;
+    padding: 5px 85px 5px 22px;
     top: -230px; }
 
   .partage .fas {
@@ -432,6 +434,7 @@ footer {
 
   .restaurant .new {
     margin: 0 30px 0 70%;
+    padding: 5px 85px 5px 18px;
     top: -250px; }
 
   h4 {
