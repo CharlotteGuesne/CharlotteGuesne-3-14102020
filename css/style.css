@@ -210,9 +210,9 @@ h5 {
     background: #F2F2F2;
     border-radius: 20px;
     box-shadow: 6px 6px 6px #aaaaaa;
-    padding: 20px 100px 20px 95px;
+    padding: 20px 20px 20px 40px;
     margin-top: 5px;
-    width: 425px; }
+    width: 320px; }
   .partage:hover p {
     background: #e4d5f6;
     border: 3px solid #e4d5f6; }
@@ -233,6 +233,7 @@ h5 {
   border-radius: 100px; }
 
 #conteneur3 {
+  width: 100%;
   display: flex;
   overflow: hidden;
   background: #F2F2F2;
@@ -397,6 +398,8 @@ footer {
 
   .partage .fas {
     margin: 15px 0 0 30px; }
+  .partage p {
+    padding: 20px 10px 20px 10px; }
 
   h4 {
     padding-bottom: 10px; }
@@ -420,7 +423,7 @@ footer {
     display: table-column;
     margin: 2%; }
     .partage p {
-      padding: 20px 140px 20px 75px; }
+      padding: 20px 10px 20px 30px; }
 
   #conteneur2 h2 {
     text-align: left; }
